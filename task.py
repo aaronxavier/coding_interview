@@ -80,8 +80,8 @@ def build_world(seed: int = 42) -> World:
     # Shuffle which tables get the colored objects
     object_specs = [
         ("red_obj",   "apple", (1.0, 0.0, 0.0)),
-        ("blue_obj",  "apple", (0.0, 0.2, 1.0)),
-        ("green_obj", "apple", (0.0, 0.85, 0.1)),
+        ("blue_obj",  "apple", (0.0, 0.0, 1.0)),
+        ("green_obj", "apple", (0.0, 1.0, 0.0)),
     ]
     chosen_tables = rng.sample([f"table{i}_tabletop" for i in range(NUM_TABLES)], len(object_specs))
     rng.shuffle(object_specs)
